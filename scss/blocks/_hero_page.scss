@@ -1,0 +1,61 @@
+.herosection {
+    @include flex;
+    margin-top: 20px;
+    &-card {
+        width: 780px;
+        height: 480px;
+        background-image: url("/img/hero-img.png");
+        background-size: cover;
+        &__title {
+            width: 483px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 49px;
+            display: flex;
+            align-items: flex-end;
+            background: linear-gradient(90deg, #0A4ECB 0%, #4788FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-inline-color: transparent;
+            margin-top: 60px;
+        }
+        &__subtitle {
+            width: 440px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #36383F;
+            margin-bottom: 45px;
+        }
+        &__link {
+            background: linear-gradient(90deg, #F04716 0%, #FFC62F 100%);
+            border-radius: 12px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            padding: 20px 36px;
+            color: #FFFFFF;
+            border-radius: 5px;
+        }
+    }
+}
+.heading-card {
+    width: 380px;
+    height: 230px;
+    background: url("/img/hero-img2.png");
+    background-color: #0A4ECB;
+    &__title {
+        width: 250px;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        color: #36383F;
+    }
+}
