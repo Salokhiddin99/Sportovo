@@ -1,0 +1,112 @@
+.footer {
+    padding-top: 100px;
+    width: 100%;
+    background-color: #1D1E22;
+    height: 478px;
+    &-start {
+        @include flex;
+        justify-content: space-between;
+        background-color: #1D1E22;
+    }
+    &-adres {
+        background-color: #1D1E22;
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &-contact {
+        background-color: #1D1E22;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: #C6C6C7;
+    }
+    &-list {
+        @include flex;
+        flex-direction: column;
+        background-color: #1D1E22;
+    }
+    &-item {
+        margin-top: 10px;
+        background-color: #1D1E22;
+    }
+    &-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color:#C6C6C7;
+    }
+    &-listicon {
+        @include flex;
+        background-color: #1D1E22;
+    }
+    &-itemicon {
+        background-color: #1D1E22;
+        margin: 5px;
+        margin-top: 20px;
+    }
+    &-linkicon {
+        background-color: #1D1E22;
+    }
+    .fa-vk, .fa-instagram, .fa-telegram, .fa-whatsapp, .fa-viber {
+        font-size: 25px;
+        background-color: #1D1E22;
+        color: yellowgreen;
+    }
+    &-catolog {
+        background-color: #1D1E22;
+        &__title {
+            background-color: #1D1E22;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color:#C6C6C7;
+        }
+        &__text {
+            @include flex;
+            background-color: #1D1E22;
+        }
+        &__list {
+            background-color: #1D1E22;
+            &--margin {
+                margin-left: 45px;
+            }
+        }
+        &__item {
+            background-color: #1D1E22;
+            margin-top: 20px;
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color:#C6C6C7;
+            &:hover {
+                color: yellowgreen;
+            }
+        }
+    }
+    &-logo {
+        background-color: #111112;
+    }
+    &-end {
+        background-color: #111112;
+        width: 100%;
+        height: 120px;
+        &__text {
+            padding-top: 40px;
+            background-color: #111112;
+            @include flex;
+            justify-content: space-between;
+            &--subtitle {
+                background-color: #111112;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 24px;
+                color: #DEDFE7;
+            }
+        }
+    }
+}

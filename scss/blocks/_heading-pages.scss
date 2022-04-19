@@ -1,0 +1,114 @@
+.section-title {
+    font-size: 31px;
+    line-height: 38px;
+    color: #36383F;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.herocard-section {
+    @include flex;
+}
+.stenki-cards {
+    @include flex;
+    justify-content: space-between;
+
+}
+.angel {
+    padding: 18px 22px;
+    border: 1px solid #DEDFE7;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #F04716;
+}
+.card {
+    position: relative;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: auto 10px;
+    &-img {
+        background-color: #FFFFFF;
+    }
+    &-subtitle {
+        width: 240px;
+        background-color: #FFFFFF;
+        font-size: 15px;
+        line-height: 24px;
+        color: #36383F;
+        margin-bottom: 46px;
+    }
+    &-sale {
+        background-color: #FFFFFF;
+        @include flex;
+        justify-content: space-between;
+    }
+    &-price {
+        background-color: #FFFFFF;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 26px;
+        color: #36383F;
+    }
+    &-hover {
+        display: none;
+        background-color: #FFFFFF;
+        position: absolute;
+        right: 0;
+        color: #F04716;
+        
+    }
+    &:hover {
+        transition: all 0.5s;
+        box-shadow: 0px 15px 25px rgba(48, 63, 115, 0.15);
+    }
+    &:hover &-hover {
+        transition: all 0.5s;
+        transition: 0.5s;
+        display: block;
+        background-color: transparent;
+    }
+    &:hover .border {
+        transition: all 0.5s;
+        transition: 0.5s;
+        background-color: #F04716;
+        color: #FFFFFF;
+    }
+    &:hover &-subtitle {
+        transition: all 0.5s;
+        transition: 0.5s;
+        color: #0A4ECB;
+    }
+}
+.border {
+    padding: 10px;
+    border: 1px solid #DEDFE7;
+    border-radius: 12px;
+    color: #F04716;
+}
+.catolog-card {
+    width: 280px;
+    height: 230px;
+    @include flex;
+    flex-direction: column;
+    justify-content: center ;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    &:hover {
+        transition: all 0.5s;
+        box-shadow: 0px 15px 25px rgba(48, 63, 115, 0.15);
+    }
+    &:hover &__title {
+        transition: all 0.5s;
+        color: #0A4ECB;
+    }
+    &__title {
+        font-size: 15px;
+        line-height: 21px;
+        background-color: #FFFFFF;
+        margin-top: 15px;
+    }
+}
+.wrap {
+    flex-wrap: wrap;
+}

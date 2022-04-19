@@ -1,29 +1,31 @@
 .herosection {
     @include flex;
+    justify-content: space-between;
     margin-top: 20px;
     &-card {
+        @include left;
         width: 780px;
         height: 480px;
         background-image: url("/img/hero-img.png");
         background-size: cover;
+        background-color: #FFFFFF;
+        border-radius: 12px;
         &__title {
-            width: 483px;
+            max-width: 483px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 900;
             font-size: 40px;
             line-height: 49px;
-            display: flex;
-            align-items: flex-end;
             background: linear-gradient(90deg, #0A4ECB 0%, #4788FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            border-inline-color: transparent;
+            scrollbar-color: transparent;
             margin-top: 60px;
         }
         &__subtitle {
-            width: 440px;
+            max-width: 440px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
@@ -31,6 +33,7 @@
             line-height: 24px;
             color: #36383F;
             margin-bottom: 45px;
+            background-color: #FFFFFF;
         }
         &__link {
             background: linear-gradient(90deg, #F04716 0%, #FFC62F 100%);
@@ -46,16 +49,45 @@
         }
     }
 }
+.back {
+    @include left;
+    max-width: 380px;
+    height: 230px;
+    background: url("/img/hero-img3.png");
+    background-size: cover;
+}
 .heading-card {
+    @include left;
     width: 380px;
     height: 230px;
     background: url("/img/hero-img2.png");
-    background-color: #0A4ECB;
+    margin-bottom: 20px;
     &__title {
-        width: 250px;
+        max-width: 250px;
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
         color: #36383F;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        background-color: transparent;
     }
+    &__subtitle {
+        max-width: 230px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #36383F;
+        margin-bottom: 40px;
+        background-color: transparent;
+    }
+    &__link {
+        color: #0A4ECB;
+    }
+}
+.fa-angle-right {
+    background-color: transparent;
+}
+.margin {
+    margin-bottom: 61px;
 }
